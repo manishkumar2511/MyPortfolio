@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <p>hello</p> 
+   <div id="header">
+        <div class="container">
+            <nav>
+                <span class="logo">
+                    <span class="logo-text-red">M</span>anish
+                </span>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h6>Hi, I'm <span>Manish</span><br>Kumar From India</h6>
+            </div>
+        </div>
+   </div>
+   <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/about.jpeg" alt="About Me">
+                </div>
+                <div class="about-col-2">
+                    <h4 class="sub-title">About Me</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Perferendis soluta accusamus exercitationem, 
+                        blanditiis neque voluptate iusto vitae eum impedit, 
+                        iste cumque sunt praesentium amet necessitatibus provident 
+                        nesciunt in aspernatur maiores!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web and App development</li>
+                            <li><span>App Development</span><br>Mobile App development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Previous Job</span><br>Worked on various projects.</li>
+                            <li><span>Freelance</span><br>Freelance projects and collaborations.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Degree</span><br>Master's in Computer Science</li>
+                            <li><span>Certifications</span><br>Various certifications in tech.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openTab(tabName) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabContents = document.getElementsByClassName("tab-contents");
+            
+            // Remove active-link class from all tab-links
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            
+            // Remove active-tab class from all tab-contents
+            for (let tabcontent of tabContents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            
+            // Add active-link class to the clicked tab
+            document.querySelector('.tab-links[onclick="openTab(\'' + tabName + '\')"]').classList.add("active-link");
+            // Add active-tab class to the clicked tab content
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
 </body>
 </html>
