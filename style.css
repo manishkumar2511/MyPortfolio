@@ -401,3 +401,99 @@ nav ul li a:hover::after {
     background: #ff004f;
     color: #fff; 
 }
+
+/* Contact section */
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.contact-left i.material-icons {
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.contact-left i.fas {
+    color: #ff004f;
+    margin-right: 20px; /* Increased margin for space between icon and text */
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    gap: 25px;
+}
+
+.social-icon {
+    text-decoration: none;
+    font-size: 30px;
+    color: #abaaab;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff004f;
+    color: #fff;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+    gap: 10px;
+}
+
+.btn.btn2:hover {
+    background: #e60039;
+}
+
+.contact-right form {
+    width: 100%;
+    text-align: center;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2 {
+    padding: 14px 50px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #ff004f;
+    color: #fff;
+    border: 1px solid #ff004f;
+}
+
+form .btn2 i.material-icons {
+    font-size: 18px;
+}
