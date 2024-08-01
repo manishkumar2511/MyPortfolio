@@ -497,3 +497,39 @@ form .btn2 {
 form .btn2 i.material-icons {
     font-size: 18px;
 }
+/* Footer Section */
+footer {
+    padding: 20px;
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+    border-top: 1px solid #444;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.social-icons-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons-footer .social-icon {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons-footer .social-icon:hover {
+    color: #ff004f;
+    transform: translateY(-3px);
+}
